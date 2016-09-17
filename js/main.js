@@ -5,57 +5,57 @@ jQuery(document).ready(function($){
 		$('.camera').fadeIn();
 	if(x<700)
 		$('#first_nav').hide();
-    $('.cont img,video').eq(0).fadeOut();
+    $('.cont img,video').eq(0).fadeOut('slow');
     $($("#m1")[0]).prependTo($('.cont'));
-	$('#m1').fadeIn();
+	$('#m1').fadeIn('slow');
   });
   $("a").eq(1).click(function(){
   	var x = $(window).width();
   	$('.camera').fadeIn();
   	if(x<700)
 		$('#first_nav').hide();
-	$('.cont img,video').eq(0).fadeOut();
+	$('.cont img,video').eq(0).fadeOut('slow');
 	$($("#m2")[0]).prependTo($('.cont'));
-	$('#m2').fadeIn();
+	$('#m2').fadeIn('slow');
   });
   $("a").eq(2).click(function(){
   	var x = $(window).width();
   	$('.camera').fadeIn();
   	if(x<700)
 		$('#first_nav').hide();
-	$('.cont img,video').eq(0).fadeOut();
+	$('.cont img,video').eq(0).fadeOut('slow');
 	$($("#m3")[0]).prependTo($('.cont'));
-	$('#m3').fadeIn();
+	$('#m3').fadeIn('slow');
   });
 	$("a").eq(3).click(function(){
-		$('.cont img,video').eq(0).fadeOut();
+		$('.cont img,video').eq(0).fadeOut('slow');
 	$($("#m6")[0]).prependTo($('.cont'));
-	$('#m6').fadeIn();
+	$('#m6').fadeIn('slow');
 	$('#m6').get(0).currentTime = 0;
-	$('.camera').fadeOut();
+	$('.camera').fadeOut('slow');
   $('#m6').get(0).play();
     	var x = $(window).width();
   	if(x<700)
-		$('#first_nav').hide();
+		$('#first_nav').fadeOut('slow');
 });
 	$("a").eq(4).click(function(){
     	var x = $(window).width();
   	if(x<700)
-		$('#first_nav').hide();
-	$('.camera').fadeIn();
-	$('.cont img,video').eq(0).fadeOut();
+		$('#first_nav').fadeOut('slow');
+	$('.camera').fadeIn('slow');
+	$('.cont img,video').eq(0).fadeOut('slow');
 	$($("#m4")[0]).prependTo($('.cont'));
-	$('#m4').fadeIn();
+	$('#m4').fadeIn('slow');
 });
 	$('#f_nav span').click(function(){
 		if($('#first_nav').css('display') =='none')
 		{
 			$('#first_nav ul').addClass('nav-stacked');
-			$('#first_nav').show();
+			$('#first_nav').fadeIn('slow');
 		}
 		else{
 			$('#first_nav ul').removeClass('nav-stacked');
-			$('#first_nav').hide();
+			$('#first_nav').fadeOut('slow');
 		}
 	});
 	// }
