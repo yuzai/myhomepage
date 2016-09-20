@@ -70,3 +70,11 @@ html,body,.cont{
 	background:#5f5f5f;
 	color:rgb(76, 175, 80);
 }
+#my_picture{
+	border-radius: 100%;
+	display: block;
+	width:200px;
+  height:200px;
+	margin:1% auto;
+	background:url(../rs/m1.jpg) -174px -200px;
+}
