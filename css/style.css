@@ -54,12 +54,9 @@ html,body,.cont{
 }
 .foot1{
 	width:100%;
-	position:fixed;
+	position:absolute;
 	left:0;
-	bottom:0;
-	text-align: center;
-}
-.foot2{
+	bottom:1%;
 	text-align: center;
 }
 .mynav a{
