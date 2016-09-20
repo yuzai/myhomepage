@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 	{
 
 		$('.cont').hide();
-		$('body').css({'background':'skyblue'});
+		$('body').css({'background':'white'});
 		$('#f_nav').show();
 		$('#first_nav').hide();
 		$('#first_nav').css({'position':'absolute','z-index':'1','left':'1%'});
@@ -29,6 +29,7 @@ jQuery(document).ready(function($){
 	}
   $("a").eq(0).click(function(){
 		$('.container').show();
+		$('.my_pane').show();
 		var x = $(window).width();
 	if(x<700)
 		$('#first_nav').hide();
@@ -38,6 +39,7 @@ jQuery(document).ready(function($){
   });
   $("a").eq(1).click(function(){
 		$('.container').show();
+		$('.my_pane').show();
   	var x = $(window).width();
   	$('.camera').fadeIn();
   	if(x<700)
@@ -48,6 +50,7 @@ jQuery(document).ready(function($){
   });
   $("a").eq(2).click(function(){
 		$('.container').show();
+		$('.my_pane').show();
   	var x = $(window).width();
   	$('.camera').fadeIn();
   	if(x<700)
@@ -58,17 +61,27 @@ jQuery(document).ready(function($){
   });
 	$("a").eq(3).click(function(){
 		$('.cont img,video').eq(0).hide();
-	$($("#m6")[0]).prependTo($('.cont'));
-	$('#m6').fadeIn('slow');
-	$('.container').hide();
-	$('#m6').get(0).currentTime = 0;
-  $('#m6').get(0).play();
     	var x = $(window).width();
-  	if(x<700)
-		$('#first_nav').hide();
+  	if(x<700){
+			$('#first_nav').hide();
+			$('#m7').show();
+			$('#m7').get(0).currentTime = 0;
+		  $('#m7').get(0).play();
+			$('.my_pane').hide();
+		}
+		else {
+			$($("#m6")[0]).prependTo($('.cont'));
+			$('#m6').fadeIn('slow');
+			$('.container').hide();
+			$('#m6').get(0).currentTime = 0;
+		  $('#m6').get(0).play();
+			$('.container').hide();
+			$('.my_pane').show();
+		}
 });
 	$("a").eq(4).click(function(){
 		$('.container').show();
+		$('.my_pane').show();
     	var x = $(window).width();
   	if(x<700)
 		$('#first_nav').hide();
@@ -97,7 +110,7 @@ $(window).resize(function(){
 	{
 		$('.foot1').css({'position':'initial'});
     $('.cont').hide();
-		$('body').css({'background':'skyblue'});
+		$('body').css({'background':'white'});
 		$('#first_nav').css({'position':'absolute','z-index':'1'});
 		$('#f_nav').show();
 		$('#first_nav').hide();
