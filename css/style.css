@@ -76,3 +76,20 @@ html,body,.cont{
 	margin:1% auto;
 	background:url(../rs/m1.jpg) -174px -200px;
 }
+
+#my_picture2{
+	border-radius: 100%;
+	display: block;
+	width:200px;
+  height:200px;
+	margin:1% auto;
+	background:url(../rs/m3.jpg) -145px -208px;
+}
+#my_picture3{
+	border-radius: 100%;
+	display: block;
+	width:200px;
+  height:200px;
+	margin:1% auto;
+	background:url(../rs/m4.jpg) -215px -163px;
+}

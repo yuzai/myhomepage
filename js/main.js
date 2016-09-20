@@ -11,7 +11,6 @@ jQuery(document).ready(function($){
 		$('#first_nav').hide();
 		$('#first_nav').css({'position':'absolute','z-index':'1','left':'1%'});
 		$('.camera').hide();
-		$('#my_picture').show();
 		$('.foot1').css({'position':'initial'});
 	}
 	else
@@ -23,7 +22,6 @@ jQuery(document).ready(function($){
 		$('#first_nav').css({'position':'initial'});
 		$('#first_nav').show();
 		$('.camera').show();
-		$('#my_picture').show();
 		$('.foot1').css({'position':'absulute'});
 
 	}
@@ -115,7 +113,6 @@ $(window).resize(function(){
 		$('#f_nav').show();
 		$('#first_nav').hide();
 		$('.camera').hide();
-		$('#my_picture').show();
 	}
 	else
 	{
@@ -127,6 +124,5 @@ $(window).resize(function(){
 		$('#first_nav').css({'position':'initial'});
 		$('#first_nav').show();
 		$('.camera').show();
-		$('#my_picture').hide();
 	}
 })
