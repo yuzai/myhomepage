@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 		$('body').css({'background':'white'});
 		$('#f_nav').show();
 		$('#first_nav').hide();
-		$('#first_nav').css({'position':'absolute','z-index':'1','left':'1%'});
+		$('#first_nav').css({'position':'absolute','z-index':'2','left':'1%'});
 		$('.camera').hide();
 		$('.foot1').css({'position':'initial'});
 	}
@@ -98,7 +98,7 @@ jQuery(document).ready(function($){
 		if($('#first_nav').css('display') =='none')
 		{
 			$('#first_nav ul').addClass('nav-stacked');
-			$('#first_nav').css({'position':'absolute','z-index':'1','left':'1%'});
+			$('#first_nav').css({'position':'absolute','z-index':'2','left':'1%'});
 			$('#first_nav').show();
 		}
 		else{
@@ -115,7 +115,7 @@ $(window).resize(function(){
 		$('.foot1').css({'position':'initial'});
     $('.cont').hide();
 		$('body').css({'background':'white'});
-		$('#first_nav').css({'position':'absolute','z-index':'1'});
+		$('#first_nav').css({'position':'absolute','z-index':'2'});
 		$('#f_nav').show();
 		$('#first_nav').hide();
 		$('.camera').hide();
