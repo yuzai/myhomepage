@@ -11,9 +11,20 @@
     <link href = 'css/bootstrap.min.css' rel ='stylesheet'>
     <link href = 'css/font-awesome.min.css' rel ='stylesheet'>
     <link href = 'css/style.css' rel ='stylesheet'>
+    <link rel="stylesheet" href="css/swiper.min.css">
 <style>
+.swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
 
-
+}
 </style>
 </head>
 
@@ -25,7 +36,6 @@
       <img src = 'rs/m4.jpg' id='m4'>
       <video  width="100%" height="100%" id='m6' src = 'rs/video/video.mp4'></video>
     </div>
-
     <div id='first'>
       <div id= 'f_nav' style = 'padding:0 10% 0 10%;width:100%;background:#5f5f5f;display:none'>
           <span style = 'color:skyblue;font-size:30px'><i class="icon-list"></i></span>
@@ -41,6 +51,7 @@
 		   <li role = 'presention' ><a href = 'https://yuzai.github.io'>BLOG</a></li>
          </ul>
       </div>
+      <!-- Swiper -->
       <div class = 'container'>
         <div class = 'row'>
           <div class = 'col-md-6  col-md-offset-3 col-xs-12  col-lg-6 col-lg-offset-3'>
@@ -57,6 +68,7 @@
                 </div>
                 </div>
           		<div role="tabpanel" class="tab-pane fade" id="about">
+                <img id = 'my_picture2'>
                 <div class='my_pane'>
                   Food truck fixie locavore, accusamus mcsweeney's marfa
                   nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson
@@ -68,16 +80,9 @@
                 </div>
                 </div>
           		<div role="tabpanel" class="tab-pane fade" id="gallary">
-                <img id = 'my_picture2'>
-              <div class='my_pane'>
-                Etsy mixtape wayfarers, ethical wes anderson tofu
-                before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.
-                Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy
-                salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred
-                pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro
-                mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown.
-                Pitchfork sustainable tofu synth chambray yr.
-              </div>
+              <!-- <div class='my_pane'>
+
+              </div> -->
               </div>
           		<div role="tabpanel" class="tab-pane fade" id="video"><video  width="100%" height="100%" id='m7' src = 'rs/video/video.mp4'></video><div class='my_pane'></div></div>
           		<div role="tabpanel" class="tab-pane fade" id="contact">
@@ -96,7 +101,22 @@
         </div>
       </div>
     </div>
-
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div width = '100px' class="swiper-slide" style="background-image:url(rs/me/i1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i6.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i7.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i9.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(rs/me/i10.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
     <div class='container-fluid foot1'>
     	<!-- <div class=" container-fluid" style = 'text-align: center'>
     		<ul class="nav nav-pills mynav2">
@@ -115,6 +135,26 @@
   <script src = 'js/jquery-1.12.3.min.js'></script>
   <script src = 'js/bootstrap.min.js'></script>
   <script src = 'js/main.js'></script>
+  <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+    </script>
 </body>
 
 </html>

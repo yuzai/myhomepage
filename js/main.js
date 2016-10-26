@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+	$('.swiper-container').hide();
 	var x = $(window).width();
 	$('.cont img,video').hide();
 	$('.cont img,video').eq(0).fadeIn();
@@ -26,6 +27,7 @@ jQuery(document).ready(function($){
 
 	}
   $("a").eq(0).click(function(){
+		$('.swiper-container').hide();
 		$('.container').show();
 		$('.my_pane').show();
 		var x = $(window).width();
@@ -36,6 +38,7 @@ jQuery(document).ready(function($){
 	$('#m1').fadeIn('slow');
   });
   $("a").eq(1).click(function(){
+		$('.swiper-container').hide();
 		$('.container').show();
 		$('.my_pane').show();
   	var x = $(window).width();
@@ -47,6 +50,7 @@ jQuery(document).ready(function($){
 	$('#m2').fadeIn('slow');
   });
   $("a").eq(2).click(function(){
+		$('.swiper-container').show();
 		$('.container').show();
 		$('.my_pane').show();
   	var x = $(window).width();
@@ -58,6 +62,7 @@ jQuery(document).ready(function($){
 	$('#m3').fadeIn('slow');
   });
 	$("a").eq(3).click(function(){
+		$('.swiper-container').hide();
 		$('.cont img,video').eq(0).hide();
     	var x = $(window).width();
   	if(x<700){
@@ -78,6 +83,7 @@ jQuery(document).ready(function($){
 		}
 });
 	$("a").eq(4).click(function(){
+		$('.swiper-container').hide();
 		$('.container').show();
 		$('.my_pane').show();
     	var x = $(window).width();
